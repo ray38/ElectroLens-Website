@@ -154,11 +154,11 @@
 
         <div class="col-lg-5 mb-5">
           <ol>
-            <li>Install nodejs and npm</li>
+            <li>Install latest nodejs and npm</li>
             <li>Clone the github repo</li>
-            <li>Delete node_modules folder if exists</li>
-            <li>Install dependencies by typing npm install</li>
-            <li>Start ElectroLens by typing npm start</li>
+            <li>Delete "node_modules" folder if exists</li>
+            <li>Install dependencies by typing "npm install"</li>
+            <li>Start ElectroLens by typing "npm start"</li>
           </ol>
         </div>
 
@@ -184,27 +184,31 @@
 
           <br><br>
           <ul>
-            <li><b>With predefined configuration file</b>
-              <ol>
-                <li>Go to "ElectroLens/Examples/example_configuration_files/"</li>
-                <li>Open the "view_setp_example1.json" file with a text editor</li>
-                <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the full path of that file</li>
-                <li>Start ElectroLens</li>
-                <li>In "Upload Configuration File" (green box), click "Choose File" and upload "view_setp_example1.json"</li>
-              </ol>
+            <li><h5>Loading the 3D view</h5>
+              <ul>
+                <li><b>With predefined configuration file</b>
+                  <ol>
+                    <li>Go to "ElectroLens/Examples/example_configuration_files/"</li>
+                    <li>Open the "view_setp_example1.json" file with a text editor</li>
+                    <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the full path of that file</li>
+                    <li>Start ElectroLens</li>
+                    <li>In "Upload Configuration File" (green box), click "Choose File" and upload "view_setp_example1.json"</li>
+                  </ol>
+                </li>
+                <br><br>
+                <li><b>Manually define configuration</b>
+                  <ol>
+                    <li>Start ElectroLens</li>
+                    <li>In "Setup configuration" (blue box) check "Spatially Resolved Data?"</li>
+                    <li>In the "List of Properties for Spatially Resolved Data" text area below, enter "x, y, z, rho, gamma, epxc, deriv1, deriv2</li>
+                    <li>In View 1, upload the "CO2_electron_desnity_with_descriptors.csv" file in "ElectroLens/Examples/example/data"</li>
+                    <li>Leave the rest as default (as shown in the picture Above), and click "Submit"</li>
+                  </ol>
+                </li>
+                <br><br>
+              </ul>  
             </li>
-            <br><br>
-            <li><b>Manually define configuration</b>
-              <ol>
-                <li>Start ElectroLens</li>
-                <li>In "Setup configuration" (blue box) check "Spatially Resolved Data?"</li>
-                <li>In the "List of Properties for Spatially Resolved Data" text area below, enter "x, y, z, rho, gamma, epxc, deriv1, deriv2</li>
-                <li>In View 1, upload the "CO2_electron_desnity_with_descriptors.csv" file in "ElectroLens/Examples/example/data"</li>
-                <li>Leave the rest as default (as shown in the picture Below), and click "Submit"</li>
-              </ol>
-            </li>
-            <br><br>
-            <li><b>View Customization</b>
+            <li><h5>View Customization</h5>
               <ol>
                 <li>Once you have the 3D view, you can customize it via the option box on the left</li>
                 <li>PBC: add periodic replicates</li>
@@ -221,7 +225,152 @@
                 <li>Slider Control: set the spatial ranges of data to be visualized</li>
               </ol>
             </li>
-          </ul>  
+          </ul>
+          
+        </div>
+        
+        <div class="col-lg-12 text-center">
+          <h3><br><br></h3>
+        </div>
+      </div>
+
+
+
+      <div class="row align-items-center justify-content-md-center">
+        <div class="col-lg-12 text-center">
+          <h3>Example 2: 2D Plots and Selection</h3>
+        </div>
+
+        <div class="col-lg-6 mb-6">
+          <img class="card-img-top" src="img/quickstart/electronicStructure_2DSelection.JPG" alt="">
+          <div class="caption text-center">Benzene 2D plots and selection</div>
+        </div>
+
+        <div class="col-lg-12 mb-12">
+
+          <br><br>
+          <ul>
+            <li><h5>Add 2D plots</h5>
+              <ul>
+                <li><b>On the fly</b>
+                  <ol>
+                    <li>Start ElectroLens and load the 3D view as in Example 1</li>
+                    <li>Simply press "a" or "+" to add a 2D plot</li>
+                    <li>Adjust the X, Y axis properties and scales via the option box of the plot</li>
+                    <li>Remember to click "Update Plot" to reflect the changes</li>
+                  </ol>
+                </li>
+                <br><br>
+                <li><b>Pre-defined configuration file</b>
+                  <ol>
+                    <li>Go to "ElectroLens/Examples/example_configuration_files/"</li>
+                    <li>Open the "view_setp_example2.json" file with a text editor</li>
+                    <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the full path of that file (as in example 1)</li>
+                    <li>Go to line 14 - 17 to change the X, Y axis properties and X, Y axis scales respectively</li>
+                    <li>Start ElectroLens</li>
+                    <li>In "Upload Configuration File" (green box), click "Choose File" and upload "view_setp_example2.json"</li>
+                  </ol>
+                </li>
+                <br><br>
+              </ul>  
+            </li>
+            <li><h5>2D plots Customization</h5>
+              <ol>
+                <li>Once you have the 2D plots, you can customize them via the option boxes of each plot</li>
+                <li>Plot Setting
+                  <ul>
+                    <li>Resolution - resolution of the heat map</li>
+                    <li>Update Plot - update the 2D plot. *** MUST CLICK to reflect the changes in "Plot Setting" ***</li>
+                    <li>X - X axis property</li>
+                    <li>X - X axis scale</li>
+                    <li>Y - Y axis property</li>
+                    <li>Y - Y axis scale</li>
+                    <li>Select All - select all data points</li>
+                    <li>Deselect All - deselect all data points</li>
+                  </ul>
+                </li>
+                <li>View Control: change the color scheme and point sizes of the plot</li>
+              </ol>
+              <br><br>
+            </li>
+            <li><h5>Selection</h5>
+              To select points on the 2D plot and show the corresponding region in the 3D view
+              <ol>
+                <li>Deselect all datapoints, the 3D view should now be blank</li>
+                <li>In the option box of 2D plot, go to "Selection" and check "with plane" (or press "1" for short cut)</li>
+                <li>Drag seletion box on the 2D plot to selection datapoints</li>
+                <li>Try with the other option: Select with brush (press "2" for short cut)</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-12 text-center">
+          <h3><br><br></h3>
+        </div>
+      </div>
+
+
+
+       <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h3>Example 3: visualize MD trajectory of 15 water</h3>
+        </div>
+        <div class="col-lg-6 mb-6">
+          <img class="card-img-top" src="img/quickstart/MD_3DView.JPG" alt="">
+          <div class="caption text-center">Benzene 3D View</div>
+        </div>
+        <div class="col-lg-6 mb-6">
+          <img class="card-img-top" src="img/quickstart/MD_setup.JPG" alt="">
+          <div class="caption text-center">View Configuration</div>
+        </div>
+        <div class="col-lg-12 mb-12">
+
+          <br><br>
+          <ul>
+            <li><h5>Loading the 3D view</h5>
+              <ul>
+                <li><b>With predefined configuration file</b>
+                  <ol>
+                    <li>Go to "ElectroLens/Examples/example_configuration_files/"</li>
+                    <li>Open the "view_setp_example1.json" file with a text editor</li>
+                    <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the full path of that file</li>
+                    <li>Start ElectroLens</li>
+                    <li>In "Upload Configuration File" (green box), click "Choose File" and upload "view_setp_example1.json"</li>
+                  </ol>
+                </li>
+                <br><br>
+                <li><b>Manually define configuration</b>
+                  <ol>
+                    <li>Start ElectroLens</li>
+                    <li>In "Setup configuration" (blue box) check "Spatially Resolved Data?"</li>
+                    <li>In the "List of Properties for Spatially Resolved Data" text area below, enter "x, y, z, rho, gamma, epxc, deriv1, deriv2</li>
+                    <li>In View 1, upload the "CO2_electron_desnity_with_descriptors.csv" file in "ElectroLens/Examples/example/data"</li>
+                    <li>Leave the rest as default (as shown in the picture Above), and click "Submit"</li>
+                  </ol>
+                </li>
+                <br><br>
+              </ul>  
+            </li>
+            <li><h5>View Customization</h5>
+              <ol>
+                <li>Once you have the 3D view, you can customize it via the option box on the left</li>
+                <li>PBC: add periodic replicates</li>
+                <li>Point Cloud Control: customize point cloud view
+                  <ul>
+                    <li>Color basis - property coded by color</li>
+                    <li>Color scheme - scheme for color code</li> 
+                    <li>Density - density of the point cloud</li>
+                    <li>Size - size of each point</li>
+                    <li>Color scale min/max - adjust color scale</li>
+                    <li>Point cloud legend - adjust the legend</li>
+                  </ul>
+                </li>
+                <li>Slider Control: set the spatial ranges of data to be visualized</li>
+              </ol>
+            </li>
+          </ul>
+          
         </div>
         
         <div class="col-lg-12 text-center">
