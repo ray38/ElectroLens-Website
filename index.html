@@ -46,6 +46,12 @@
             <a class="nav-link js-scroll-trigger" href="#introduction">Introduction</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#quickstart">Quickstart</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
           </li>
           <li class="nav-item">
@@ -73,10 +79,21 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Introduction</h2>
+          <h2 class="section-heading text-uppercase">ElectroLens</h2>
           <h3 class="section-subheading text-muted">
-          ElectroLens is written in JavaScript, and mainly with the $`three.js`$ library that is based on WebGL technology and wrapped into a standalone desktop app that supports Windows, MacOS and Linux with the $`electron.js`$ library. It presents the high-dimensional data of spatially-resolved electronic environment descriptors or atomic descriptors using a combination of 3D views and 2D plots, with intuitive connections via selection.
+          ElectroLens is written in JavaScript, and mainly with the three.js library that is based on WebGL technology and wrapped into a standalone desktop app that supports Windows, MacOS and Linux with the electron.js library. It presents the high-dimensional data of spatially-resolved electronic environment descriptors or atomic descriptors using a combination of 3D views and 2D plots, with intuitive connections via selection.
         </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Download</h2>
         </div>
       </div>
       <div class="row text-center">
@@ -86,9 +103,9 @@
             <i class="fas fa-download fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">
-            <a href="https://www.google.com">Download</a>
+            <a href="https://www.google.com">Download </a>
           </h4>
-          <p class="text-muted">Latest Stable version (1.0)</p>
+          <p class="text-muted">Latest Stable version (Coming Soon!)</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -98,7 +115,7 @@
           <h4 class="service-heading">
             <a href="https://www.google.com">Download</a>
           </h4>
-          <p class="text-muted">Latest Test version (1.1)</p>
+          <p class="text-muted">Latest Test version (Coming Soon!)</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -115,6 +132,171 @@
     </div>
   </section>
 
+
+  <section class="bg-light" id="quickstart">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Quick Start</h2>
+          <h3 class="section-subheading text-muted">
+          It's easier than you think<br><br>
+        </h3>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h3>Installation</h3>
+        </div>
+        <div class="col-lg-7 mb-7">
+          <img class="card-img-top" src="img/quickstart/Installation.JPG" alt="">
+        </div>
+
+        <div class="col-lg-5 mb-5">
+          <ol>
+            <li>Install nodejs and npm</li>
+            <li>Clone the github repo</li>
+            <li>Delete node_modules folder if exists</li>
+            <li>Install dependencies by typing npm install</li>
+            <li>Start ElectroLens by typing npm start</li>
+          </ol>
+        </div>
+
+        <div class="col-lg-12 text-center">
+          <h3><br><br></h3>
+        </div>
+      </div>
+
+
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h3>Example 1: visualize benzene electronic structure</h3>
+        </div>
+        <div class="col-lg-6 mb-6">
+          <img class="card-img-top" src="img/quickstart/electronicStructure_3DView.JPG" alt="">
+          <div class="caption text-center">Benzene 3D View</div>
+        </div>
+        <div class="col-lg-6 mb-6">
+          <img class="card-img-top" src="img/quickstart/electronicStructure_setup.JPG" alt="">
+          <div class="caption text-center">View Configuration</div>
+        </div>
+        <div class="col-lg-12 mb-12">
+
+          <br><br>
+          <ul>
+            <li><b>With predefined configuration file</b>
+              <ol>
+                <li>Go to "ElectroLens/Examples/example_configuration_files/"</li>
+                <li>Open the "view_setp_example1.json" file with a text editor</li>
+                <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the full path of that file</li>
+                <li>Start ElectroLens</li>
+                <li>In "Upload Configuration File" (green box), click "Choose File" and upload "view_setp_example1.json"</li>
+              </ol>
+            </li>
+            <br><br>
+            <li><b>Manually define configuration</b>
+              <ol>
+                <li>Start ElectroLens</li>
+                <li>In "Setup configuration" (blue box) check "Spatially Resolved Data?"</li>
+                <li>In the "List of Properties for Spatially Resolved Data" text area below, enter "x, y, z, rho, gamma, epxc, deriv1, deriv2</li>
+                <li>In View 1, upload the "CO2_electron_desnity_with_descriptors.csv" file in "ElectroLens/Examples/example/data"</li>
+                <li>Leave the rest as default (as shown in the picture Below), and click "Submit"</li>
+              </ol>
+            </li>
+            <br><br>
+            <li><b>View Customization</b>
+              <ol>
+                <li>Once you have the 3D view, you can customize it via the option box on the left</li>
+                <li>PBC: add periodic replicates</li>
+                <li>Point Cloud Control: customize point cloud view
+                  <ul>
+                    <li>Color basis - property coded by color</li>
+                    <li>Color scheme - scheme for color code</li> 
+                    <li>Density - density of the point cloud</li>
+                    <li>Size - size of each point</li>
+                    <li>Color scale min/max - adjust color scale</li>
+                    <li>Point cloud legend - adjust the legend</li>
+                  </ul>
+                </li>
+                <li>Slider Control: set the spatial ranges of data to be visualized</li>
+              </ol>
+            </li>
+          </ul>  
+        </div>
+        
+        <div class="col-lg-12 text-center">
+          <h3><br><br></h3>
+        </div>
+      </div>
+
+
+<!--
+
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h3>Example 1: visualize benzene electronic structure</h3>
+        </div>
+        <div class="col-lg-6 mb-6">
+          <ul>
+            <li>With predefined configuration file
+              <ol>
+                <li>Go to "ElectroLens/Examples/example_configuration_files/"</li>
+                <li>Open the "view_setp_example1.json" file with a text editor</li>
+                <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the full path of that file</li>
+                <li>Start ElectroLens</li>
+                <li>In "Upload Configuration File" (green box), click "Choose File" and upload "view_setp_example1.json"</li>
+              </ol>
+            </li>
+            <li>Manually define configuration
+              <ol>
+                <li>Start ElectroLens</li>
+                <li>In "Setup configuration" (blue box) check "Spatially Resolved Data?"</li>
+                <li>In the "List of Properties for Spatially Resolved Data" text area below, enter "x, y, z, rho, gamma, epxc, deriv1, deriv2</li>
+                <li>In View 1, upload the "CO2_electron_desnity_with_descriptors.csv" file in "ElectroLens/Examples/example/data"</li>
+                <li>Leave the rest as default (as shown in the picture Below), and click "Submit"</li>
+              </ol>
+            </li>
+          </ul>
+          
+        </div>
+
+        <div class="col-lg-6 mb-6">
+          <img class="card-img-top" src="img/quickstart/electronicStructure_setup.JPG" alt="">
+        </div>
+
+        <div class="col-lg-12 text-center">
+          <h3><br><br></h3>
+        </div>
+      </div>
+
+
+
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h3>Example with MD trajectory</h3>
+        </div>
+        <div class="col-lg-5 mb-5">
+          <ol>
+            <li>Install nodejs and npm</li>
+            <li>Clone the github repo</li>
+            <li>Delete node_modules folder if exists</li>
+            <li>Install dependencies by typing npm install</li>
+            <li>Start ElectroLens by typing npm start</li>
+          </ol>
+        </div>
+
+        <div class="col-lg-7 mb-7">
+          <img class="card-img-top" src="img/quickstart/MD_setup.JPG" alt="">
+        </div>
+
+        <div class="col-lg-12 text-center">
+          <h3><br><br></h3>
+        </div>
+      </div>
+-->
+
+    </div>
+  </section>
 
 
 
@@ -149,8 +331,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">Meet our great developers</h3>
+          <h2 class="section-heading text-uppercase">Team</h2>
+          <h3 class="section-subheading text-muted">Meet our developers</h3>
         </div>
       </div>
       <div class="row">
@@ -207,11 +389,6 @@
         
         
       </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -255,24 +432,19 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Sponsors and Affiliated Institutions</h2>
+          <h2 class="section-heading text-uppercase">Sponsors</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/sponsors/doe.png" alt="">
-          </a>
         </div>
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/sponsors/LLNL.png" alt="">
-          </a>
-        </div>        
+                
         <div class="col-lg-4 col-sm-6 mb-4">
           <a href="#">
             <img class="img-fluid d-block mx-auto" src="img/sponsors/gatech.png" alt="">
           </a>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
         </div>
       </div>
     </div>
@@ -285,195 +457,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Your Website 2019</span>
-        </div>
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-          </ul>
+          <span class="copyright">Copyright &copy; ElectroLens 2019</span>
         </div>
       </div>
     </div>
   </footer>
-
-  <!-- Portfolio Modals -->
-
-  <!-- Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Dr. Phanish Suryanarayana</h2>
-                <p class="item-intro text-muted">Department of Civil Engineering, Georgia Institute of Technology</p>
-                <img class="img-fluid d-block mx-auto" src="img/PIs/suryanarayana-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>item 1: adsfwe</li>
-                  <li>item 2: adsfwe</li>
-                  <li>item 3: adsfwe</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Dr. John Pask</h2>
-                <p class="item-intro text-muted">Lawrence Livermore National Laboratory</p>
-                <img class="img-fluid d-block mx-auto" src="img/PIs/pask-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>item 1: adsfwe</li>
-                  <li>item 2: adsfwe</li>
-                  <li>item 3: adsfwe</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Dr. Edmond Chow</h2>
-                <p class="item-intro text-muted">School of Computational Science and Engineering, Georgia Institute of Technology</p>
-                <img class="img-fluid d-block mx-auto" src="img/PIs/chow-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>item 1: adsfwe</li>
-                  <li>item 2: adsfwe</li>
-                  <li>item 3: adsfwe</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Dr. Andrew J. Medford</h2>
-                <p class="item-intro text-muted">School of Chemical and Biomolecular Engineering, Georgia Institute of Technology</p>
-                <img class="img-fluid d-block mx-auto" src="img/PIs/medford-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>item 1: adsfwe</li>
-                  <li>item 2: adsfwe</li>
-                  <li>item 3: adsfwe</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Duen Horng (Polo) Chau</h2>
-                <p class="item-intro text-muted">School of Computational Science and Engineering, Georgia Institute of Technology</p>
-                <img class="img-fluid d-block mx-auto" src="img/PIs/chau.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>item 1: adsfwe</li>
-                  <li>item 2: adsfwe</li>
-                  <li>item 3: adsfwe</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <!-- Bootstrap core JavaScript -->

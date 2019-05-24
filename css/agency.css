@@ -165,14 +165,15 @@ img::-moz-selection {
 }
 
 header.masthead {
-  min-height: 860px;
+  min-height: 500px;
   text-align: center;
   color: white;
+  background-color: black;
   background-image: url("../img/banner.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 }
 
 header.masthead .intro-text {
