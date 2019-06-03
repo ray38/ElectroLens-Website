@@ -154,11 +154,11 @@
 
         <div class="col-lg-5 mb-5">
           <ol>
-            <li>Install latest nodejs and npm</li>
-            <li>Clone the github repo</li>
-            <li>Delete "node_modules" folder if exists</li>
-            <li>Install dependencies by typing "npm install"</li>
-            <li>Start ElectroLens by typing "npm start"</li>
+            <li>Install latest <a href="https://nodejs.org/en/"><strong>nodejs and npm</strong></a></li>
+            <li>Clone the <a href="https://github.com/ray38/ElectroLens"><strong>github repo</strong></a></li>
+            <li>Delete <strong>node_modules</strong> folder if exists</li>
+            <li>Install dependencies by typing <kbd>npm install</kbd></li>
+            <li>Start ElectroLens by typing <kbd>npm start</kbd></li>
           </ol>
         </div>
 
@@ -188,21 +188,21 @@
               <ul>
                 <li><b>With predefined configuration file</b>
                   <ol>
-                    <li>Go to "ElectroLens/Examples/example_configuration_files/"</li>
+                    <li>Go to <strong>"ElectroLens/Examples/example_configuration_files/"</strong></li>
                     <li>Open the "view_setp_example1.json" file with a text editor</li>
-                    <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the full path of that file</li>
-                    <li>Start ElectroLens</li>
-                    <li>In "Upload Configuration File" (green box), click "Choose File" and upload "view_setp_example1.json"</li>
+                    <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the <strong>full path</strong> of "/Examples/example_data/C6H6_electron_desnity_with_descriptors.csv"</li>
+                    <li>Start ElectroLens by typing <kbd>npm start</kbd></li>
+                    <li>In <kdb>"Upload Configuration File"</kdb> (green box), click <kdb>"Choose File"</kdb> and upload "view_setp_example1.json"</li>
                   </ol>
                 </li>
                 <br><br>
                 <li><b>Manually define configuration</b>
                   <ol>
                     <li>Start ElectroLens</li>
-                    <li>In "Setup configuration" (blue box) check "Spatially Resolved Data?"</li>
-                    <li>In the "List of Properties for Spatially Resolved Data" text area below, enter "x, y, z, rho, gamma, epxc, deriv1, deriv2</li>
-                    <li>In View 1, upload the "CO2_electron_desnity_with_descriptors.csv" file in "ElectroLens/Examples/example/data"</li>
-                    <li>Leave the rest as default (as shown in the picture Above), and click "Submit"</li>
+                    <li>In <kbd>Setup configuration</kbd> (blue box) check <kbd>Spatially Resolved Data?</kbd></li>
+                    <li>In the <kbd>List of Properties for Spatially Resolved Data</kbd> text area below, enter <strong>"x, y, z, rho, gamma, epxc, deriv1, deriv2"</strong> (no quotation mark)</li>
+                    <li>In View 1, upload the <strong>"CO2_electron_desnity_with_descriptors.csv"</strong> file in "ElectroLens/Examples/example/data"</li>
+                    <li>Leave the rest as default (as shown in the picture Above), and click <kbd>Submit</kbd></li>
                   </ol>
                 </li>
                 <br><br>
@@ -210,7 +210,7 @@
             </li>
             <li><h5>View Customization</h5>
               <ol>
-                <li>Once you have the 3D view, you can customize it via the option box on the left</li>
+                <li>Once you have the 3D view, you can customize it via the <kbd>option box</kbd> on the left</li>
                 <li>PBC: add periodic replicates</li>
                 <li>Point Cloud Control: customize point cloud view
                   <ul>
@@ -255,20 +255,20 @@
                 <li><b>On the fly</b>
                   <ol>
                     <li>Start ElectroLens and load the 3D view as in Example 1</li>
-                    <li>Simply press "a" or "+" to add a 2D plot</li>
+                    <li>Simply press <kbd>a</kbd> or <kbd>+</kbd> to add a 2D plot</li>
                     <li>Adjust the X, Y axis properties and scales via the option box of the plot</li>
-                    <li>Remember to click "Update Plot" to reflect the changes</li>
+                    <li>Remember to click <kbd>Update Plot</kbd> to reflect the changes</li>
                   </ol>
                 </li>
                 <br><br>
                 <li><b>Pre-defined configuration file</b>
                   <ol>
-                    <li>Go to "ElectroLens/Examples/example_configuration_files/"</li>
+                    <li>Go to <strong>"ElectroLens/Examples/example_configuration_files/"</strong></li>
                     <li>Open the "view_setp_example2.json" file with a text editor</li>
-                    <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the full path of that file (as in example 1)</li>
+                    <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the <strong>full path</strong> of that file (as in example 1)</li>
                     <li>Go to line 14 - 17 to change the X, Y axis properties and X, Y axis scales respectively</li>
-                    <li>Start ElectroLens</li>
-                    <li>In "Upload Configuration File" (green box), click "Choose File" and upload "view_setp_example2.json"</li>
+                    <li>Start ElectroLens by typing <kbd>npm start</kbd></li>
+                    <li>In <kdb>"Upload Configuration File"</kdb> (green box), click <kdb>"Choose File"</kdb> and upload "view_setp_example2.json"</li>
                   </ol>
                 </li>
                 <br><br>
@@ -280,7 +280,7 @@
                 <li>Plot Setting
                   <ul>
                     <li>Resolution - resolution of the heat map</li>
-                    <li>Update Plot - update the 2D plot. *** MUST CLICK to reflect the changes in "Plot Setting" ***</li>
+                    <li>Update Plot - update the 2D plot. <strong>*** MUST CLICK to reflect any changes in "Plot Setting" ***</strong></li>
                     <li>X - X axis property</li>
                     <li>X - X axis scale</li>
                     <li>Y - Y axis property</li>
@@ -297,9 +297,9 @@
               To select points on the 2D plot and show the corresponding region in the 3D view
               <ol>
                 <li>Deselect all datapoints, the 3D view should now be blank</li>
-                <li>In the option box of 2D plot, go to "Selection" and check "with plane" (or press "1" for short cut)</li>
+                <li>In the <strong>option box</strong> of 2D plot, go to <kbd>Selection</kbd> and check <kbd>with plane</kbd> (or press <kbd>1</kbd> for shortcut)</li>
                 <li>Drag seletion box on the 2D plot to selection datapoints</li>
-                <li>Try with the other option: Select with brush (press "2" for short cut)</li>
+                <li>Try with the other option: Select <kbd>with brush</kbd> (press <kbd>2</kbd> for shortcut)</li>
               </ol>
             </li>
           </ul>
@@ -332,21 +332,22 @@
               <ul>
                 <li><b>With predefined configuration file</b>
                   <ol>
-                    <li>Go to "ElectroLens/Examples/example_configuration_files/"</li>
-                    <li>Open the "view_setp_example1.json" file with a text editor</li>
-                    <li>Go to line 8 ("dataFilename" for "spatiallyResolvedData") and change it to the full path of that file</li>
-                    <li>Start ElectroLens</li>
-                    <li>In "Upload Configuration File" (green box), click "Choose File" and upload "view_setp_example1.json"</li>
+                    <li>Go to <strong>"ElectroLens/Examples/example_configuration_files/"</strong></li>
+                    <li>Open the <strong>"view_setp_example3.json"</strong> file with a text editor</li>
+                    <li>Go to line 7 ("dataFilename" for "moleculeData") and change it to the full path of that file</li>
+                    <li>Start ElectroLens by typing <kbd>npm start</kbd></li>
+                    <li>In <kdb>"Upload Configuration File"</kdb> (green box), click <kdb>"Choose File"</kdb> and upload "view_setp_example3.json"</li>
                   </ol>
                 </li>
                 <br><br>
                 <li><b>Manually define configuration</b>
                   <ol>
                     <li>Start ElectroLens</li>
-                    <li>In "Setup configuration" (blue box) check "Spatially Resolved Data?"</li>
-                    <li>In the "List of Properties for Spatially Resolved Data" text area below, enter "x, y, z, rho, gamma, epxc, deriv1, deriv2</li>
-                    <li>In View 1, upload the "CO2_electron_desnity_with_descriptors.csv" file in "ElectroLens/Examples/example/data"</li>
-                    <li>Leave the rest as default (as shown in the picture Above), and click "Submit"</li>
+                    <li>In <kbd>Setup configuration</kbd> (blue box) check <kbd>Molecular Data?</kbd> and <kbd>Framed Data?</kbd></li>
+                    <li>In the <kbd>List of Properties for Molecular Data</kbd> text area below, enter <strong>"x, y, z, atom, G1, G2, G3, G4, G5, G6, frame"</strong> (no quotation mark)</li>
+                    <li>In View 1, upload the <strong>15_water_MD_with_Gaussian_fingerprints.csv</strong> file in "ElectroLens/Examples/example/data"</li>
+                    <li>Change the system dimemsion to be 0 for <kbd>xmin</kbd>, <kbd>ymin</kbd>, <kbd>zmin</kbd> and 25 for <kbd>xmax</kbd>, <kbd>ymax</kbd>, <kbd>zmax</kbd> </li>
+                    <li>Leave the rest as default (as shown in the picture Above), and click <kbd>Submit</kbd></li>
                   </ol>
                 </li>
                 <br><br>
@@ -354,19 +355,21 @@
             </li>
             <li><h5>View Customization</h5>
               <ol>
-                <li>Once you have the 3D view, you can customize it via the option box on the left</li>
+                <li>Once you have the 3D view, you can customize it via the <strong>option box</strong> on the left</li>
+                <li>Drag the "Current Frame" bar in "View Control" to view different images in the trajectory</li>
                 <li>PBC: add periodic replicates</li>
-                <li>Point Cloud Control: customize point cloud view
+                <li>Molecule Control: customize point cloud view
                   <ul>
+                    <li>Atom style - style for drawing atoms (sprite is the much cheaper option)</li>
+                    <li>Bond style - style for drawing atoms (line is the much cheaper option)</li>
                     <li>Color basis - property coded by color</li>
-                    <li>Color scheme - scheme for color code</li> 
-                    <li>Density - density of the point cloud</li>
-                    <li>Size - size of each point</li>
                     <li>Color scale min/max - adjust color scale</li>
-                    <li>Point cloud legend - adjust the legend</li>
+                    <li>Size basis - property coded by atom size</li>
+                    <li>Size scale min/max - adjust color atom size</li>
+                    <li>Bond max/min - the max/min distance to draw bonds between 2 atoms</li>
+                    <li>Molecule legend - adjust the legend</li>
                   </ul>
                 </li>
-                <li>Slider Control: set the spatial ranges of data to be visualized</li>
               </ol>
             </li>
           </ul>
