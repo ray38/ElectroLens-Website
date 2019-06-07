@@ -81,7 +81,7 @@
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">ElectroLens</h2>
           <h3 class="section-subheading text-muted">
-          ElectroLens is written in JavaScript, and mainly with the three.js library that is based on WebGL technology and wrapped into a standalone desktop app that supports Windows, MacOS and Linux with the electron.js library. It presents the high-dimensional data of spatially-resolved electronic environment descriptors or atomic descriptors using a combination of 3D views and 2D plots, with intuitive connections via selection.
+          A new visualization tool for high-dimensional spatially-resolved features to tackle this problem. The tool visualizes atomistic structures and electron density data sets by a series of 3D views and 2D plots. The tool is able to connect different derived features and their corresponding regions in 3D via interactive selection. It is built to be visually attractive, efficient with large datasets, and easy to use and integrate with existing infrastructure.
         </h3>
         </div>
       </div>
@@ -146,7 +146,7 @@
 
       <div class="row align-items-center">
         <div class="col-lg-12 text-center">
-          <h3>Installation</h3>
+          <h3>Installation (from source)</h3>
         </div>
         <div class="col-lg-7 mb-7">
           <img class="card-img-top" src="img/quickstart/Installation.JPG" alt="">
@@ -448,6 +448,57 @@
       </div>
 
 
+      <div class="row align-items-center justify-content-md-center">
+        <div class="col-lg-12 text-center">
+          <h3>Data Structure</h3>
+        </div>
+
+        
+
+        <div class="col-lg-12 mb-12">
+
+          <br><br>
+          <h6>ElectroLens uses <kbd>csv</kbd> (comma separated value) as the default file type for data</h6>
+          <h6>Depend on the type of descriptors (electronic structure or atomistic), slightly different properties are needed</h6>
+          <h6>To visualize framed data (trajectories for atoms or electronic structures), one extra property is needed</h6>
+          <br>
+          <ul>
+            <li><h5>Electronic Structure Data</h5>
+                <img class="card-img-top" src="img/quickstart/electronicStructure_datafile.JPG" alt="">
+                <div class="caption text-center">Data structure for electronic structure data</div>
+              <ul>
+                <li>Each row corresponds to a data point, and each column corresponds to a property</li>
+                <li>Properties <kbd>x</kbd>, <kbd>y</kbd>, <kbd>z</kbd> and a property that corresponds to <kbd>[density]</kbd> (in this case "rho") are needed </li>
+              </ul>
+            </li>
+            <br>
+            <li><h5>Atomistic Data</h5>
+                <img class="card-img-top" src="img/quickstart/atomistic_datafile.JPG" alt="">
+                <div class="caption text-center">Data structure for atomistic data</div>
+              <ul>
+                <li>Each row corresponds to a data point, and each column corresponds to a property</li>
+                <li>Properties <kbd>x</kbd>, <kbd>y</kbd>, <kbd>z</kbd> and <kbd>atom</kbd> are needed </li>
+              </ul>
+            </li>
+            <br>
+            <li><h5>Framed Data</h5>
+                <img class="card-img-top" src="img/quickstart/MD_datafile.JPG" alt="">
+                <div class="caption text-center">Data structure for framed data</div>
+              <ul>
+                <li>If the data to be visualized is framed (e.g. trajectory), simply add a column that corresponds to the <kbd>[frame number]</kbd> (in this case "frame")</li>
+                <li>You can give it any name, just remember to specify it on the configuration form</li>
+                <li>Works not only for atomistic trajectories, but also electronic structure trajectories</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-12 text-center">
+          <h3><br><br></h3>
+        </div>
+      </div>
+
+
 <!--
 
       <div class="row align-items-center">
@@ -609,10 +660,10 @@
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="card h-100">
-            <a href="https://arxiv.org/abs/1603.04339"><img class="card-img-top" src="img/softwares/sparc.png" alt=""></a>
+            <a href="https://www.sparc-x.com/"><img class="card-img-top" src="img/softwares/sparc.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">SPARC-X</a>
+                <a href="https://www.sparc-x.com/">SPARC-X</a>
               </h4>
               <p class="card-text">SPARC</p>
             </div>
